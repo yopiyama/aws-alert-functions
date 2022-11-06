@@ -7,7 +7,9 @@ CloudTrail → CWL → サブスクリプションフィルタ(Lambda) → Slack
 1. CloudTrail ログを CloudWatch Logs へ出力する設定を有効化する
 2. このスクリプトを Lambda へデプロイ
    1. 以下の環境変数を設定する
-      1. SLACK_WEBHOOK_URL
+      1. WEBHOOK_URL
+      2. DESTINATION
+         1. slack or discord
 3. CloudWatch Logs のロググループでサブスクリプションフィルタの設定を行う
    1. Lambda のサブスクリプションフィルタを選択
    2. フィルタは任意の物を設定する
